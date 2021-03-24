@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">">
+
+    <item android:title="Principal"
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+      >
+
+        </item>
+    <item android:title="Categorias"
+        android:id="@+id/listas"
+        android:icon="@drawable/ic_list"
+        android:enabled="true">
+
+    </item>
+    <item android:title="Biblioteca"
+        android:id="@+id/biblioteca"
+        android:enabled="true"
+        android:icon="@drawable/ic_biblioteca">
+
+
+    </item>
+    <item android:title="Buscar"
+        android:id="@+id/buscar"
+        android:icon="@drawable/ic_search"
+        android:enabled="true"
+        >
+
+    </item>
+    <item android:title="Cuenta"
+        android:id="@+id/cuenta"
+        android:icon="@drawable/ic_account"
+        android:enabled="true"
+        >
+
+    </item>
+</menu>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "314503306155",
+    "project_id": "beat-byte",
+    "storage_bucket": "beat-byte.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:314503306155:android:6b0d31e4930099654d50ee",
+        "android_client_info": {
+          "package_name": "com.example.beatbyte"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "314503306155-798ef0h7ltmqqrr47dlsto75m42mmqff.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.beatbyte",
+            "certificate_hash": "60aafe2013b4b855fdac51377b11026eb0d6d3af"
+          }
+        },
+        {
+          "client_id": "314503306155-tk9acdej30fu1fur5vl7qbbh45rbmg31.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCX-65Ls77MbDTnhOgSyze-XfTaBDybqSk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "314503306155-tk9acdej30fu1fur5vl7qbbh45rbmg31.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

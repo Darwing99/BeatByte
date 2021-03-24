@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">BeatByte</string>
+    <string name="nombre">Nombre</string>
+    <string name="apellido">Apellido</string>
+    <string name="email">E-mail</string>
+    <string name="password">password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <string name="action_settings">Settings</string>
+
+    <!--DASHBOARD TEXXTOS DE CATEGORIAS-->
+    <string name="musica">Random Music</string>
+    <string name="rock">Rock</string>
+    <string name="electronica">Electronica </string>
+    <string name="jazz">Jazz</string>
+    <string name="pop">Pop</string>
+    <string name="hiphop">Hip Hop</string>
+    <string name="rhythm">Rhythm and Blues</string>
+    <string name="soul">Soul Music</string>
+    <string name="clasica">Classical Music</string>
+    <string name="reggae">Reggae</string>
+    <string name="gaming">Gaming Music</string>
+
+    <!--TITULOS Y DESCRIPCIONES-->
+
+    <string name="nombreapp">BeatByte</string>
+    <string name="tops">TOPS CHARTS FAMOSOS </string>
+    <string name="tops_descripcion">Los tops más escuchados en los paises de más demanda en la Música.</string>
+    <string name="masVisto">Más Visto</string>
+    <string name="categorias">Categorias</string>
+    <string name="radios">Radios en Directo</string>
+    <string name="verTodo">Ver Todo</string>
+    <string name="searchText">Buscar...</string>
+</resources>

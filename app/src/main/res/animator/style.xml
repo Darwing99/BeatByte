@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+android:ordering= "sequentially"
+
+<objectAnimator
+android:propertyName="string"
+android:duration="3000"
+android:valueFrom="float | int | color"
+android:valueTo="float | int | color"
+android:startOffset="3000"
+android:repeatCount="3000"
+android:repeatMode="restart"
+    android:valueType="floatType"/>
+
+<animator
+android:duration="300"
+android:valueFrom="float"
+android:valueTo="float"
+android:startOffset="3000"
+android:repeatCount="3000"
+android:repeatMode="restart"
+    android:valueType="floatType"/>
+
+
+    </set>
