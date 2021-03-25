@@ -1,7 +1,11 @@
 package com.example.beatbyte;
 
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -53,9 +57,6 @@ public class MainActivity extends AppCompatActivity {
                     fragment=new BuscarFragment();
                     break;
 
-                case R.id.cuenta:
-                    fragment=new LoginFragment();
-                    break;
 
 
             }
@@ -81,6 +82,7 @@ public class MainActivity extends AppCompatActivity {
         updateUI(firebaseAuth.getCurrentUser());
    }
 
+
     private void updateUI(FirebaseUser user){
 //        if(user==null){
 //            Intent intent=new Intent(MainActivity.this,LoginActivity.class);
@@ -92,4 +94,22 @@ public class MainActivity extends AppCompatActivity {
 //        }
 
     }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menusuperior, menu);
+
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item){
+        if (item.getItemId()==R.id.configuracion){
+            fragment=new LoginFragment();
+            getSupportFragmentManager().beginTransaction().replace(R.id.main,fragment).commit();
+
+
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
 }

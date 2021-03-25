@@ -3,7 +3,7 @@
 
     <item android:title="Principal"
         android:id="@+id/home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_menu_24dp"
       >
 
         </item>
@@ -27,11 +27,5 @@
         >
 
     </item>
-    <item android:title="Cuenta"
-        android:id="@+id/cuenta"
-        android:icon="@drawable/ic_account"
-        android:enabled="true"
-        >
 
-    </item>
 </menu>

@@ -3,6 +3,7 @@ package com.example.beatbyte.fragmentos;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +30,10 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.auth.GoogleAuthProvider;
+import com.squareup.picasso.Callback;
+import com.squareup.picasso.Picasso;
+
+import static android.content.ContentValues.TAG;
 
 
 public class LoginFragment extends Fragment {
@@ -139,10 +144,28 @@ public class LoginFragment extends Fragment {
 
         if(user!=null){
             account.getFamilyName();
-            Glide.with(vista.getContext())
-                    .load(account.getPhotoUrl()).centerCrop()
-                    .circleCrop()
-                    .into(perfil);
+//            Glide.with(vista.getContext())
+//                    .load(account.getPhotoUrl()).centerCrop()
+//                    .circleCrop()
+//                    .into(perfil);
+            Picasso.get()
+                    .load(account.getPhotoUrl())
+                    .placeholder(R.mipmap.loader)
+                    .fit()
+                    .centerCrop()
+                    .into(perfil, new Callback() {
+                        @Override
+                        public void onSuccess() {
+                            Log.d(TAG, "onSuccess: Correcto");
+                        }
+
+                        @Override
+                        public void onError(Exception e) {
+                            Log.d(TAG, "onSuccess: Algo salio mal :c", e);
+                        }
+                    });
+
+
             perfil.setVisibility(View.VISIBLE);
             nombre.setText(account.getFamilyName());
             nombre.setGravity(View.TEXT_ALIGNMENT_CENTER);

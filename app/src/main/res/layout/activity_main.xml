@@ -27,7 +27,7 @@
         style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
 
         app:itemBackground="?attr/selectableItemBackground"
-        app:labelVisibilityMode="labeled"
+        app:labelVisibilityMode="selected"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
